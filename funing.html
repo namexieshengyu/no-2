@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>喜剧电影</title>
+		<link rel="stylesheet" type="text/css" href="css/movie.css" />
+		<script type="text/javascript">
+			var msg = "欢迎来到XD电影网，各种精彩电影等你来观看。。。"
+
+			function srollTitle() {
+				document.title = msg;
+				msg = msg.substring(1, msg.length) + msg.substring(0, 1);
+			}
+			setInterval("srollTitle()", 500);
+		</script>
+		<!-- 喜剧电影的HTML -->
+	</head>
+	<body>
+			<!-- 头部 -->
+			<div class="top">
+				<div class="yellow"></div>
+				<div class="red"></div>
+				<div class="blue"></div>
+				<div class="yellow"></div>
+				<div class="red"></div>
+			</div>
+			<!-- 欢迎的界面 -->
+			<div class="welcome">
+				<div class="container">
+					<p>Welcome to the official portal of movie network</p>
+				</div>
+			</div>
+			<!-- logo那一排的的区域 -->
+			<div class="logo">
+				<div class="container">
+					<div class="logo-icon"><img src="img/logo.png" alt="" width="135px" height="80px"></div>
+					<div class="name">
+						<h2>XD电影网</h2>
+					</div>
+					<div class="search">
+						<form action="/search.jspx" target="_blank" id="searchForm">
+							<input type="text" name="q" value="" maxlength="200px" autocomplete="off" class="searchCon">
+							<input type="submit" value="搜索" class="searchMenu">
+						</form>
+					</div>
+				</div>
+			</div>
+			<!-- 导航栏部分 -->
+			<div id="nav">
+				<ul class="nav">
+					<li><a href="index.html">首页</a></li>
+					<li><a href="#">喜剧</a></li>
+					<li><a href="#">动作</a></li>
+					<li><a href="#">科幻</a></li>
+					<li><a href="#">剧情</a></li>
+					<li><a href="#">爱情</a></li>
+					<li><a href="#">动画</a></li>
+					<li><a href="#">惊悚</a></li>
+					<li><a href="#">犯罪</a></li>
+				</ul>
+			</div>
+
+			<div class="title">当前位置——>喜剧</div>
+			<div class="banner">
+				<ul class="film">
+					<li><a href="">
+							<div class="img"><img src="img/funing/ychx.jpg"></div>
+							<div class="text">
+								<h2>一出好戏</h2>
+							</div>
+						</a></li>
+					<li><a href="">
+							<div class="img"><img src="img/funing/bsnzwd.jpg"></div>
+							<div class="text">
+								<h2>不是闹着玩的</h2>
+							</div>
+							
+						</a></li>
+					<li><a href="">
+							<div class="img"><img src="img/funing/bstg.jpg"></div>
+							<div class="text">
+								<h2>变身特工</h2>
+							</div>
+							
+						</a></li>
+					<li><a href="">
+							<div class="img"><img src="img/funing/kbwgdz.jpg"></div>
+							<div class="text">
+								<h2>快把我哥带走</h2>
+							</div>
+							
+						</a></li>
+					<li><a href="">
+							<div class="img"><img src="img/funing/llldhsds.jpg"></div>
+							<div class="text">
+								<h2>小萝莉的猴神大叔</h2>
+							</div>
+							
+						</a></li>
+					<li><a href="">
+							<div class="img"><img src="img/funing/trjta2.jpg"></div>
+							<div class="text"><h2>唐人街探案2</h2>
+							</div>
+							
+						</a></li>
+					<li><a href="">
+							<div class="img"><img src="img/funing/wbsys.jpg"></div>
+							<div class="text"><h2>我不是药神</h2>
+							</div>
+							
+						</a></li>
+					<li><a href="">
+							<div class="img"><img src="img/funing/wmmsr.jpg"></div>
+							<div class="text"><h2>完美陌生人</h2></div>
+							
+						</a></li>
+					<li><a href="">
+							<div class="img"><img src="img/funing/wmzb.jpg"></div>
+							<div class="text"><h2>无名之辈</h2></div>
+							
+						</a></li>
+					<li><a href="">
+							<div class="img"><img src="img/funing/xc.jpg"></div>
+							<div class="text"><h2>歇菜</h2></div>
+							
+						</a></li>
+				</ul>
+			</div>
+			<!-- 尾标 -->
+			<div class="page">
+				<a href="#">上一页</a>
+				<span class="pagenow">1</span>
+				<a href="#">2</a>
+				<a href="#">3</a>
+				<a href="#">下一页</a>
+			</div>
+			<!-- 足部 -->
+			<footer class="footer">
+				<div class="footer-link container">
+					<a style="margin-left:0;" target="_blank" href="#">关于我们</a><a href="#" target="_blank">合作媒体</a>
+					<a href="#">加入收藏</a>
+					<div class="copyright container">
+						<p>版权所有：中国电影股份有限公司 京ICP备14025334号-2 </p>
+						<p>地址：北京市西城区北展北街7号华远企业号E座 | 联系邮箱：chinafilmzyw@163.com</p>
+						<p>网站技术服务：北京逸海京通科技有限公司</p>
+					</div>
+			</footer>
+	</body>
+</html>

@@ -1,0 +1,250 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+li{list-style: none;}
+/* 头部彩色条状的css */
+.top div{
+	width: 20%;
+	float: left;
+	height: 5px;
+}
+.top div.yellow{
+	background-color: #ffb400;
+}
+.top div.red{
+	background-color: #ef3838;
+}
+.top div.blue{
+	background-color: #0373B9;
+}
+.container{
+	width: 1300px;
+	margin: 0 auto;
+}
+/* 欢迎的css */
+.welcome{
+	background-color: black;
+	width: 100%;
+	height: 40px;
+}
+.welcome p{
+	height: 40px;
+	font-size: 12px;
+	color: #ffffff;
+	line-height: 40px;
+}
+/* logo那一排的css */
+.logo {
+    width: 100%;
+    height: 80px;
+    overflow: hidden;
+}
+.logo .logo-icon {
+   height: 80px;
+   width: 132px;
+   float: left;
+   background-color: #0373B9;
+   background-repeat: no-repeat;
+}
+.logo .container{
+	width: 100%;
+	height: 80px;
+	background-color: #ffffff;
+}
+/* logo名字 */
+.logo .name {
+    float: left;
+	line-height: 80px;
+    background-repeat: no-repeat;
+    margin-left: 30px;
+}
+@keyframes mycolor{
+	0%  {color: #000000;}
+	30% {color: #0373B9;}
+	60% {color: #198540;}
+	100%{color: #28A4C9;}
+}
+@keyframes search{
+	0%  {background-color: #000000;}
+	30% {background-color: #0373B9;}
+	60% {background-color: #198540;}
+	100%{background-color: #28A4C9;}
+}
+.logo .name{
+	animation: mycolor 5s linear;
+	animation-iteration-count: infinite;
+}
+/* logo的搜索框 */
+.logo .search {
+    width: 300px;
+    height: 35px;
+    box-sizing: border-box;
+    border: 1px solid #c2c2c2;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -o-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    float: right;
+   margin: 20px 0;
+}
+form {
+    display: block;
+    margin-top: 0em;
+}
+/* 搜索框的前边长条 */
+.logo .search .searchCon {
+    width: 200px;
+	height: 30px;
+    float: left;
+    background: none;
+    line-height: 10px;
+    text-indent: 5px;
+    outline: none;
+    font-size: 12px;
+}
+/* 搜索框的后边搜索键 */
+.logo .search .searchMenu {
+    float: left;
+    width: 85px;
+    height: 35px;
+	background-color: #5F5F5F;
+    outline: none;
+    cursor: pointer;
+	animation: search 5s linear;
+	animation-iteration-count: infinite;
+}
+/* 导航栏一块 */
+#nav{
+	width: 100%;
+	height: 50px;
+	background: #4d3704;
+}
+.nav{
+	width: 980px;
+	height: 50px;
+	line-height: 35px;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 14px;
+}
+.nav li {
+    float: left;
+	width: 10%;
+    height: 50px;
+    font-size: 16px;
+    line-height: 50px;
+}
+.nav a{
+	display: inline-block;
+	padding: 0 40px;
+}
+.nav li a {
+    display: block;
+    padding: 0 15px;
+    color: #40aaa7;
+}
+a:visited {
+    color: #660950;
+    text-decoration: none;
+}
+a:hover{
+	background-color: #7f1e6f;
+}
+/* 电影区域 */
+.banner{
+	margin: 0 auto;
+	width: 1300px;
+	height: 850px;
+	background-color: #4d3704;
+}
+.banner li{
+	width: 240px;
+	height: 390px;
+	padding: 5px;
+	background-color: #f8ffb0;
+	float: left;
+	list-style: none;
+	margin: 5px;
+}
+.banner li img{
+	width: 230px;
+	height: 340px;
+	margin: 0 auto;
+}
+.banner .text{
+	width: 240px;
+	height: 50px;
+	text-align: center;
+}
+.title{
+	width: 150px;
+	height: 50px;
+	position: relative;
+	line-height: 50px;
+	background-color: #198540;
+	border-radius: 10px;
+}
+/* 尾标 */
+.page {
+    height: 28px;
+    line-height: 28px;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 0;
+	background-color: #6dc8b6;
+}
+.page a{
+    display: inline-block;
+    background-color: #fff;
+    padding: 0px 12px;
+    margin: 5px 3px;
+    font-size: 15px;
+}
+.page .pagenow {
+    display: inline-block;
+    background-color: #46c832;
+    color: #fff;
+    padding: 0px 12px;
+    margin: 5px 3px;
+    font-size: 15px;
+}
+.page a:hover{
+	background-color: #61b92a;
+}
+/* 足部css */
+.footer{
+	width: 980px;
+	height: 20px;
+	background-color: chocolate;
+	text-align: center;
+	margin: 0 auto;
+}
+.footer {
+    width: 100%;
+	background-color: #f4e2cc;
+	height: 150px;
+    background: #e9ddcd;
+    min-width: 1300px;
+}
+.footer .footer-link {
+    line-height: 54px;
+    border-bottom: 1px solid #3a3a3a;
+    text-align: center;
+}
+.footer .footer-link a {
+    margin-left: 66px;
+    color: #fff;
+    font-size: 14px;
+}
+.footer .copyright {
+    line-height: 24px;
+    color: #aeaeae;
+    font-size: 12px;
+    text-align: center;
+    padding: 15px 0;
+    border-top: 1px solid #5f5f5f;
+}
